@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deps": "yarn && yarn prepare-husky",
     "start": "next dev",
     "build": "next build",
     "lint": "tsc --noEmit && eslint --no-error-on-unmatched-pattern --ext .ts,.tsx . --fix",
     "prepare-husky": "husky install",
-    "pre-commit": "npx --no-install lint-staged"
+    "pre-commit": "set NODE_ENV=production&&npx --no-install lint-staged"
   },
   "dependencies": {
     "next": "^13.1.6",
