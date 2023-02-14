@@ -1,5 +1,3 @@
-yarn
-
-yarn prepare-husky
+yarn deps
 
 yarn start
