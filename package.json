@@ -1,20 +1,22 @@
 {
-  "name": "next-starter",
+  "name": "@beercode/next-starter",
   "version": "0.1.0",
-  "private": true,
+  "description": "Next Starter",
   "scripts": {
     "deps": "yarn && yarn prepare-husky",
     "start": "next dev",
     "build": "next build",
     "lint": "tsc --noEmit && eslint --no-error-on-unmatched-pattern --ext .ts,.tsx . --fix",
     "prepare-husky": "husky install",
-    "pre-commit": "set NODE_ENV=production&&npx --no-install lint-staged"
+    "pre-commit": "set NODE_ENV=production&&npx --no-install lint-staged",
+    "publish-lib": "npm publish --access public"
   },
   "dependencies": {
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "typescript": "4.8.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.1",
@@ -39,7 +41,6 @@
     "eslint-plugin-react-redux": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "typescript": "4.8.4"
+    "prettier": "^2.7.1"
   }
 }
