@@ -1,6 +1,6 @@
 {
   "name": "@beercode/next-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Next Starter",
   "scripts": {
     "deps": "yarn && yarn prepare-husky",
