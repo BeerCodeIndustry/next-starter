@@ -1,15 +1,19 @@
 {
-  "name": "@beercode/next-starter",
+  "name": "create-br-next",
   "version": "0.1.1",
   "description": "Next Starter",
+  "bin": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeerCodeIndustry/next-starter"
+  },
   "scripts": {
-    "deps": "yarn && yarn prepare-husky",
     "start": "next dev",
     "build": "next build",
     "lint": "tsc --noEmit && eslint --no-error-on-unmatched-pattern --ext .ts,.tsx . --fix",
-    "prepare-husky": "husky install",
     "pre-commit": "set NODE_ENV=production&&npx --no-install lint-staged",
-    "publish-lib": "npm publish --access public"
+    "publish-lib": "npm publish --access public",
+    "postinstall": "npx husky install"
   },
   "dependencies": {
     "next": "^13.1.6",
