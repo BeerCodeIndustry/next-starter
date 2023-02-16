@@ -1,6 +1,6 @@
 {
   "name": "create-next-beer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Next Starter",
   "bin": "./bin/cli.js",
   "repository": {
