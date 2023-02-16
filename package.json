@@ -1,11 +1,8 @@
 {
-  "name": "create-br-next",
-  "version": "0.1.2",
+  "name": "create-next-beer",
+  "version": "0.1.1",
   "description": "Next Starter",
   "bin": "./bin/cli.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BeerCodeIndustry/next-starter"

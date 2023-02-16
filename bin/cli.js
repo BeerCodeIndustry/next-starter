@@ -14,7 +14,7 @@ const runCmd = cmd => {
   return true
 }
 
-const repoName = process.argv[2]
+const repoName = process.argv[2] ?? 'next-app'
 const gitCheckoutCmd = `git clone --depth 1 https://github.com/BeerCodeIndustry/next-starter ${repoName}`
 const installDepsCmd = `cd ${repoName} && yarn install`
 
